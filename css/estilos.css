@@ -159,15 +159,43 @@ footer {
  }
 
 
-
-
-
-
-
-
-
-
-
-
-
+ .columns.medium-5 {
+  flex-basis: 20%; 
+  margin-top: 5%;
+  margin-right: 3%;
+  color: aliceblue !important;  
 }
+
+.nosotros-pag-principal{
+  text-align: center;
+  margin-top: 3%;
+  color: aliceblue
+}
+
+.columna-nos-princ{
+  display: flex;
+  margin: 5%;
+  column-gap: 5%;
+  
+}
+
+.texto1{
+  flex-basis: 90%;
+}
+
+.texto2{
+  flex-basis: 10%;
+ text-align: center;
+}
+
+
+.redes-canosur {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mapa-canosur {
+  width: 100% !important;
+}
+}
+
