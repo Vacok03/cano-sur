@@ -123,6 +123,7 @@ main {
 
 .mapa-canosur{
   margin: 4%;
+
 }
 
 
@@ -195,8 +196,13 @@ footer {
 }
 
 .mapa-canosur {
-  width: 100% !important;
+  margin: 4%;
+  overflow: hidden;
 }
+
+.mapa-canosur iframe {
+  width: 100%; 
+  height: 300px; /
 }
 
 /* CSS PARA PAG NOSOTROS*/
