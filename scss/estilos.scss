@@ -1,10 +1,15 @@
+@import 'utilities/variables';
+@import 'utilities/mixin';
+
+
+
 .navbar-brand .logo-cano {
     width: 80px !important;
     height: auto !important;
   }
   
   body {
-    background-color: #294750;
+    background-color: $primer-color;
   }
   
   #navbarNav {
@@ -18,9 +23,9 @@
   }
   
   main {
-    background-color: #131D21;
+    background-color: $segundo-color;
     .columna-izquierda {
-      display: flex;
+        @include flex-center;
   
       .medium-7 {
         flex-basis: 60%;
@@ -78,7 +83,7 @@
   .sectionimg-grid-container {
     max-width: auto;
     margin: auto;
-    background-color: #131D21;
+    background-color: $segundo-color;
     padding: 2%;
   }
   
@@ -100,10 +105,10 @@
       margin: auto;
   
       li {
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-  
+       display: flex;
+       align-items: center;
+       margin-bottom: 15px;
+
         img {
           max-width: 8%;
           margin-right: 1%;
@@ -116,21 +121,18 @@
   .mapa-canosur {
     margin: 4%;
   
-    iframe {
-      width: 100%;
-      height: 300px;
-    }
+
   }
   
   footer {
-    background-color: #131D21;
+    background-color: $segundo-color;
     text-align: center;
     padding: 1%;
   
     .logo-footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        @include flex-center;
+        flex-direction: column;
+        align-items: center;
   
       img {
         max-width: 8%;
@@ -195,3 +197,34 @@
     }
   }
   
+
+
+  /*CSS PARA PAG NOSOTROS*/
+  main{
+    text-align: center;
+    margin-bottom: 5%;
+    color: antiquewhite;
+    background-color: $segundo-color;
+    padding: 1%;
+}
+
+.sectiom.img.nos{
+    display: flex;
+    justify-content: center;
+    background-color: $primer-color;
+}
+.imagenes-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px; 
+        max-width: 100%;
+}   
+.imagenes-container img{
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+}
+    
+
+

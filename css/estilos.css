@@ -16,7 +16,9 @@ body {
 main {
   background-color: #131D21; }
   main .columna-izquierda {
-    display: flex; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     main .columna-izquierda .medium-7 {
       flex-basis: 60%;
       margin-left: 7%; }
@@ -84,9 +86,6 @@ main {
 
 .mapa-canosur {
   margin: 4%; }
-  .mapa-canosur iframe {
-    width: 100%;
-    height: 300px; }
 
 footer {
   background-color: #131D21;
@@ -94,6 +93,8 @@ footer {
   padding: 1%; }
   footer .logo-footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     align-items: center; }
     footer .logo-footer img {
@@ -135,3 +136,28 @@ footer {
     .mapa-canosur iframe {
       width: 100%;
       height: 300px; } }
+
+/*CSS PARA PAG NOSOTROS*/
+main {
+  text-align: center;
+  margin-bottom: 5%;
+  color: antiquewhite;
+  background-color: #131D21;
+  padding: 1%; }
+
+.sectiom.img.nos {
+  display: flex;
+  justify-content: center;
+  background-color: #294750; }
+
+.imagenes-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 100%; }
+
+.imagenes-container img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%; }
